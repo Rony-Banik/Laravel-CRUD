@@ -127,6 +127,9 @@ return array(
 	 * A new custom service provider has been added to laravel  
 	 */
 		'Repositories\RepositoriesServiceProvider',
+	/**
+	 * After this the "UserRepositoryInterface" is being used on "UsersController"
+	 */
 		'Way\Generators\GeneratorsServiceProvider',
 
 	),

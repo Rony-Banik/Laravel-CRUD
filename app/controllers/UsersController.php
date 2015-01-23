@@ -16,7 +16,7 @@ class UsersController extends \BaseController {
 	/**
 	 * Defining the constructor to be able to typehint User Model which is actually the
 	 * UserRepositoryInterface declared above the class declaration.
-	 *
+	 * By this method an instance of the "UserRepositoryInterface" has been  injected into the Controller
 	 * @return Response
 	 */
 
