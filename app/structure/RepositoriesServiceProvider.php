@@ -24,4 +24,5 @@ class RepositoriesServiceProvider extends ServiceProvider {
 
 	/**
 	 * After this the "RepositoriesServiceProvider" is added to the "providers" array on the "app.php"
+	 * To register this "ServiceProvider".
 	 */
