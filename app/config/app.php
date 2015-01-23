@@ -13,7 +13,7 @@ return array(
 	|
 	*/
 
-	'debug' => false,
+	'debug' => true,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -121,6 +121,12 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+	/**
+	 * The statement written beneath is pointing to the RepositoriesServiceProvider
+	 * Created in the "structure/Repositories" repository
+	 * A new custom service provider has been added to laravel  
+	 */
+		'Repositories\RepositoriesServiceProvider',
 		'Way\Generators\GeneratorsServiceProvider',
 
 	),
