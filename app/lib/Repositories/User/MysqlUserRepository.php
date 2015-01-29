@@ -10,6 +10,9 @@
 
 Use User;
 
+use \Services\Validation\UserValidator as vn;
+
+
 class MysqlUserRepository implements UserRepositoryInterface {
 
 	public function all(){
@@ -24,15 +27,17 @@ class MysqlUserRepository implements UserRepositoryInterface {
  
 	public function create($input){
 
-		$user = new User;
-		$user->firstname = $input;
+		//$validation = new v;
+		$v = new vn;
 
-				$user->lastname = "lastname";
-					$user->username = "user";
-				$user->email = "email";
-				$user->password = "pass";
-				$user->telephone = "tele";
-				$user->code = "code";
+
+		if ($v->validate($input)) {
+			dd('thanks');
+		}
+dd("validation not found");
+		$user = new User;
+		$user->email = $input;
+		$user->password = "pass";
 		$user->save();
 		return "got it? :)";
 	}

@@ -45,7 +45,10 @@ class UsersController extends \BaseController {
 	 */
 	public function getCreate()
 	{	
-		$input = "Karan";
+		$input = "Abr";
+		
+
+		
 		return $this->user->create($input);
 	}
 
@@ -55,9 +58,9 @@ class UsersController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function getStore()
 	{
-		//
+		return View::make('test.store');
 	}
 
 	/**
