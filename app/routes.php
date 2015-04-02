@@ -15,3 +15,8 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+Route::controller('test','UsersController');
+Route::get('test/create', 'UsersController@getCreate');
+
+//App::Bind
+//Route::controller(uri, controller, names)
